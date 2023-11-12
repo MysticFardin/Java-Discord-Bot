@@ -2,6 +2,8 @@ package discordbot;
 
 import discordbot.commands.Command;
 import discordbot.commands.PingCommand;
+import discordbot.commands.PingLatencyCommand;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,7 @@ public class CommandManager {
 
     public CommandManager() {
         commands.put("ping", new PingCommand());
-        // Register other commands
+        commands.put("pinglatency",new PingLatencyCommand());
     }
 
     public Command getCommand(String name) {
