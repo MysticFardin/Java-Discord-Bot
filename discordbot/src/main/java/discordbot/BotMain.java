@@ -15,7 +15,7 @@ import discordbot.commands.Command;
 public class BotMain extends ListenerAdapter {
 	private final Map<String, Command> commands = new HashMap<>();
     private final CommandManager commandManager = new CommandManager();
-private static String token="MTE3Mjc5NTg1NDE5NzkwMzQ0MA.GVJobr.Zq_kVBIIT0kw48ZwEh-bbfSpoVYFG_NXjbMGo4";
+private static String token="TOKEN";
 
     public static void main(String[] args) throws LoginException {
         JDABuilder builder = JDABuilder.createDefault(token);
